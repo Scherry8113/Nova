@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1abc9c;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #1abc9c;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #16a085;
+}
+
+/* Main area */
+.main-area {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Timer styles */
+.timer-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: 500px;
+}
+
+.timer-box input {
+  padding: 12px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  width: 60%;
+  margin-bottom: 1rem;
+}
+
+.timer-box button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  background-color: #1abc9c;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.timer-box button:hover {
+  background-color: #16a085;
+}
+
+#countdown {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timer-box input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .timer-box button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.timer-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.timer-box button {
+  flex: 1;
+}
+
+.xp-box {
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #00ffc8;
+  background: #1a1a2e;
+  padding: 10px 20px;
+  border-radius: 12px;
+  width: fit-content;
+  box-shadow: 0 0 10px #00ffc8;
+}
+

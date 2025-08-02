@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Novaa</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">✨ NOVAA</div>
+    <ul class="nav-links">
+      <li><a href="notepad.html">📝 Notepad</a></li>
+      <li><a href="quests.html">🎯 Quests</a></li>
+      <li><a href="calculator.html">🧮 Calculator</a></li>
+     
+    </ul>
+  </nav>
+
+  <main class="main-area">
+    <h2 class="section-title">Focus Timer</h2>
+
+    
+
+    <div class="timer-box">
+  <input type="number" id="minutes" placeholder="Enter minutes" min="1" />
+  <div class="timer-buttons">
+    <button onclick="startTimer()">Start</button>
+    <button id="pauseBtn" onclick="togglePause()">Pause</button>
+  </div>
+  <div id="countdown">00:00</div>
+</div>
+ <div id="xpDisplay" class="xp-box">Title: 🥚 Newbie (0 XP)</div>
+
+
+    
+  </main>
+  <script src="themes.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

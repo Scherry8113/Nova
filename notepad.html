@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notepad - Novaa</title>
+  <link rel="stylesheet" href="notepad.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="dashboard.html">← Back to Dashboard</a>
+    <div class="title">📝 Novaa Notepad</div>
+  </nav>
+
+  <main>
+    <textarea id="noteArea" placeholder="Write your thoughts, ideas or plans here..."></textarea>
+    <div class="btn-group">
+      <button onclick="saveNote()">💾 Save</button>
+      <button onclick="clearNote()">🗑️ Clear</button>
+    </div>
+  </main>
+
+  <script src="themes.js"></script>
+  <script src="notepad.js"></script>
+</body>
+</html>
